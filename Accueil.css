@@ -1,0 +1,60 @@
+/* image de fond de tout l'ecran */
+body {
+    background: url('images/accueil.png') center center/cover no-repeat fixed;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+/* Barre noire à gauche */
+.accueil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 90vh;
+    
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.titre {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Form */
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Boutons */
+button {
+    padding: 16px 90px;
+    font-size: 18px;
+    background-color: #01167a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #0d47a1;
+    transform: translateY(-2px);
+}
+
